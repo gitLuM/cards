@@ -1,0 +1,21 @@
+{
+  "name": "cardgame",
+  "version": "1.0.0",
+  "description": "A web game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Luca Marceca (aka. LuM) <hi@valenzelektron.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitLuM/cards/issues"
+  },
+  "homepage": "https://github.com/gitLuM/cards#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
