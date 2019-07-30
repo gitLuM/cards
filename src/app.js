@@ -27,7 +27,7 @@ let app = express();
 // port setup
 app.set("port", process.env.PORT || 3000);
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs"); // JavaScript Template Enginge
+app.set("view engine", "ejs"); // JavaScript Template Engine
 
 app.use(routes);
 
