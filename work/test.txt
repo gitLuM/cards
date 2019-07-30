@@ -21,3 +21,134 @@ Test File
 	</div>
   </body>
 </html>
+
+style.css
+
+body
+{
+	background-color: rgb(0, 161, 0);
+	color: rgb(28, 96, 79);
+	text-align: center;
+	margin: 0px;
+	padding: 1px;
+}
+
+header
+{
+	min-width: min-content;
+	max-width: none;
+	min-height: min-content;
+	max-height: max-content;
+	width: 100%;
+	height: 50px;
+	margin: 0px;
+}
+
+h3
+{
+	text-align: center;
+	padding: 0px;
+	margin: 0px auto;
+	box-shadow: 5px 5px 15px 15px black;
+}
+
+p
+{
+	margin: auto;
+	padding: 25% 25%;
+	margin: 0px;
+	color: black;
+}
+
+ul
+{ 
+list-item-type: none;
+}
+
+ul li
+{
+	text-align: center;
+	background-image: url(file:///C:/Users/fanin/Desktop/card_game/images/greenbli.gif);
+	background-repeat: no-repeat;
+	padding: initial;
+	margin: 1%;
+}
+
+footer
+{
+	padding-left: inherit;
+	margin: 50% 0% 0% 0%;
+	padding: 5px 25%;
+	min-width: 5px;
+	max-height: 1%;
+	max-width: 100%;
+}
+
+a
+{
+	color: black;
+}
+
+div#name
+{
+	width: auto;
+	height: auto;
+	min-width: 1px;
+	min-height: 1px;
+	max-width: max-content;
+	max-height: max-content;
+	margin: auto 50% 0px 50%;
+}
+
+div#separate
+{
+	width:auto;
+	height:auto;
+	min-height:20px;
+	min-width:20px;
+}
+
+/*
+entire container, keeps perspective
+.flip-container {
+	perspective: 1000px;
+}
+	flip the pane when hovered
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+flip speed goes here
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+hide back of pane during swap
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+front pane, placed above back
+.front {
+	z-index: 2;
+	/* for firefox 31
+	transform: rotateY(0deg);
+}
+
+back, initially hidden pane
+.back {
+	transform: rotateY(180deg);
+}
+*/
