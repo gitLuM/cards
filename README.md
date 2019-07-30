@@ -7,6 +7,9 @@ Project on Daisie: https://www.daisie.com/projects/Card-Game--Strategy-xouuBHRCe
 
 ```
 (1) download
-(2) localhost in browser URL (PORT: 3000): localhost:3000 
+(2) TERMINAL: cd into the repo directory
+(3) TERMINAL: npm install
+(4) TERMINAL: npm start
+(5) localhost in browser URL (PORT: 3000): localhost:3000 
 ```
 For changes use "JavaScript Template Enginge" and go to the "views" folder (views = client/public).
