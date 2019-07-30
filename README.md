@@ -1,2 +1,2 @@
-# cards
-A strategy card game
+# Cards
+A web strategy card game
