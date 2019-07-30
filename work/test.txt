@@ -1,1 +1,23 @@
 Test File
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>president game</title>
+	<link rel="stylesheet" type="text/css" href="to modify">
+</head>
+
+<body>
+<header>
+	<h3>Président</h3>
+</header>
+		<ul>
+			Ici seront placés les éléments principaux :
+			<li class="li">tableau des scores Location reserved for show scores_array
+			<li class="li">dealed_cards (52 % 4)
+		  <li class="li">fosse (cartes)
+		</ul>
+	<div id="separate">
+	</div>
+  </body>
+</html>
