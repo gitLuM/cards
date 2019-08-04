@@ -4,7 +4,7 @@ Test File
 <head>
 	<meta charset="utf-8">
 	<title>president game</title>
-	<link rel="stylesheet" type="text/css" href="to modify">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -15,17 +15,16 @@ Test File
 			Ici seront placés les éléments principaux :
 			<li class="li">tableau des scores Location reserved for show scores_array
 			<li class="li">dealed_cards (52 % 4)
-		  <li class="li">fosse (cartes)
+		  	<li class="li">fosse (cartes)
 		</ul>
-	<div id="separate">
+	<div id="id">
 	</div>
   </body>
 </html>
 
 style.css
 
-body
-{
+body {
 	background-color: rgb(0, 161, 0);
 	color: rgb(28, 96, 79);
 	text-align: center;
@@ -33,8 +32,7 @@ body
 	padding: 1px;
 }
 
-header
-{
+header {
 	min-width: min-content;
 	max-width: none;
 	min-height: min-content;
@@ -44,29 +42,25 @@ header
 	margin: 0px;
 }
 
-h3
-{
+h3 {
 	text-align: center;
 	padding: 0px;
 	margin: 0px auto;
 	box-shadow: 5px 5px 15px 15px black;
 }
 
-p
-{
+p {
 	margin: auto;
 	padding: 25% 25%;
 	margin: 0px;
 	color: black;
 }
 
-ul
-{ 
+ul { 
 list-item-type: none;
 }
 
-ul li
-{
+li {
 	text-align: center;
 	background-image: url(file:///C:/Users/fanin/Desktop/card_game/images/greenbli.gif);
 	background-repeat: no-repeat;
@@ -74,8 +68,7 @@ ul li
 	margin: 1%;
 }
 
-footer
-{
+footer {
 	padding-left: inherit;
 	margin: 50% 0% 0% 0%;
 	padding: 5px 25%;
@@ -84,13 +77,11 @@ footer
 	max-width: 100%;
 }
 
-a
-{
+a {
 	color: black;
 }
 
-div#name
-{
+div#name {
 	width: auto;
 	height: auto;
 	min-width: 1px;
@@ -100,8 +91,7 @@ div#name
 	margin: auto 50% 0px 50%;
 }
 
-div#separate
-{
+div#separate {
 	width:auto;
 	height:auto;
 	min-height:20px;
@@ -109,12 +99,14 @@ div#separate
 }
 
 /*
+
 entire container, keeps perspective
 .flip-container {
 	perspective: 1000px;
 }
-	flip the pane when hovered
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
+
+flip the pane when hovered
+.flip-container:hover, .flipper, .flip-container .hover .flipper {
 		transform: rotateY(180deg);
 	}
 
@@ -127,14 +119,12 @@ flip speed goes here
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 hide back of pane during swap
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -151,4 +141,5 @@ back, initially hidden pane
 .back {
 	transform: rotateY(180deg);
 }
+
 */
