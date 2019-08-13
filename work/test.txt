@@ -8,73 +8,75 @@ Test File
 </head>
 
 <body>
-<header>
-	<h3>Président</h3>
-</header>
-		<ul>
-			Ici seront placés les éléments principaux :
-			<li class="li">tableau des scores Location reserved for show scores_array
-			<li class="li">dealed_cards (52 % 4)
-		  	<li class="li">fosse (cartes)
-		</ul>
-	<div id="id">
-	</div>
-  </body>
+	<header>
+		<h1>Card Game CSS</h1>
+		<h2>Card Design</h2>
+	</header>
+	<section>
+		<img src="images/cartes-gif/Ac.gif" alt="As clubs"/>
+		<img src="images/cartes-gif/Ad.gif" alt="As diams"/>
+		<img src="images/cartes-gif/Ah.gif" alt="As hearts"/>
+		<img src="images/cartes-gif/As.gif" alt="As spades"/>
+		<img src="images/cartes-gif/Kc.gif" alt="King clubs"/>
+		<img src="images/cartes-gif/Kd.gif" alt="King diams"/>
+		<img src="images/cartes-gif/Kh.gif" alt="King hearts"/>
+		<img src="images/cartes-gif/Ks.gif" alt="King spades"/>
+		<img src="images/cartes-gif/Qc.gif" alt="Queen clubs"/>
+		<img src="images/cartes-gif/Qd.gif" alt="Queen diams"/>
+		<img src="images/cartes-gif/Qh.gif" alt="Queen hearts"/>
+		<img src="images/cartes-gif/Qs.gif" alt="Queen spades"/>
+		<img src="images/cartes-gif/Jc.gif" alt="Jack curds"/>
+	</section>
+
+	<footer>
+		Réalisé par Jesus en personne
+	</footer>
+</body>
 </html>
 
-style.css
+
+														file: style.css
+
 
 body {
-	background-color: rgb(0, 161, 0);
-	color: rgb(28, 96, 79);
 	text-align: center;
-	margin: 0px;
-	padding: 1px;
 }
 
-header {
-	min-width: min-content;
-	max-width: none;
-	min-height: min-content;
-	max-height: max-content;
-	width: 100%;
-	height: 50px;
-	margin: 0px;
+header { 
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 10%;
+	max-height: 15%;
+	box-shadow: 2px 2px 5px black;
 }
 
-h3 {
-	text-align: center;
-	padding: 0px;
-	margin: 0px auto;
-	box-shadow: 5px 5px 15px 15px black;
+h1, h2, h3 {
+	color: #188c0d;
+	background-color: #000;
+	border: 2px solid rgb(255, 228, 196);
 }
 
-p {
-	margin: auto;
-	padding: 25% 25%;
-	margin: 0px;
-	color: black;
+section img {
+    min-width: 81px;
+    max-width: 100%;
+    min-height: 107px;
+    max-height: 100%;
+    padding: 10px 50px 0 0;
+    margin: 0%;
+    text-align: justify;
 }
 
-ul { 
-list-item-type: none;
+/*
+img:hover, img:visited {
+	color: #66df5b;
 }
-
-li {
-	text-align: center;
-	background-image: url(file:///C:/Users/fanin/Desktop/card_game/images/greenbli.gif);
-	background-repeat: no-repeat;
-	padding: initial;
-	margin: 1%;
-}
+*/
 
 footer {
-	padding-left: inherit;
-	margin: 50% 0% 0% 0%;
-	padding: 5px 25%;
-	min-width: 5px;
-	max-height: 1%;
-	max-width: 100%;
+	color: #188c0d;
+	background-color: #000;
+	border: 2px solid rgb(255, 228, 196);
+	margin-top: 100px;
 }
 
 a {
