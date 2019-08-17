@@ -19,11 +19,18 @@
 const /* #define */ pattern = [ "hearts", "diams", "clubs", "spades" ];
 const /* #define */ rank = [ 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A" ];
 const /* #define */ PLAYER_AMOUNT = 4;
+const /* #define */ winCompis = [ 
+                                  ["card", "highCard"],
+                                  ["card", "card", "highCard"]
+                                ];
 
-var /* string[] */ player_cards = {}, /* string[] */ bot_1_cards = {}, /* string[] */ bot_2_cards = {}, /* string[] */ bot_3_cards = {}, /* string[] */ cards = [], /* string[] */ shuffledCards = [];
+var /* string[] */ player_cards = {}, /* string[] */ globalCardCounting = [], /* string[] */ bot_1_cards = {}, /* string[] */ bot_2_cards = {}, /* string[] */ bot_3_cards = {}, /* string[] */ cards = [], /* string[] */ shuffledCards = [];
+var /* boolean */ start = true;
+
 let bot_1, bot_2, bot_3;
 let shuffle = (array) => { for(let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [array[i], array[j]] = [array[j], array[i]]; } return array; };
-
+// TODO: pushGlobal after brain() call
+let pushGlobal = (arr) => { for(var i = 0; i < arr.length; i++) { globalCardCounting.push(arr[i]); } };
 
 function setup() { 
     // get all cards
@@ -68,10 +75,7 @@ function setup() {
     bot_3 = new Bot(bot_3_cards);
 }
 
-var /* boolean */ start = true;
-var /* string[] */ globalCardCounting = []; // array of past cards
 
-var pushGlobal = (arr) => { for(var i = 0; i < arr.length; i++) { globalCardCounting.push(arr[i]); } };
 class Bot {
     constructor(deck) {
         this.cards = deck; 
@@ -168,16 +172,123 @@ class Bot {
         *       
         *       (a) start with "random" card pair if it doesn't find any decision
         * 
-        * 
         *       (b) make main logic through decision (decision by counting the cards and predict algorithm)
         * 
         */
       
+        // reset at new set
         let currentPushVar = [];
+        let savedHighCards = [];
       
         if(start) { // current player is the first of current round
-            if(globalCardCounting !== []) {
-                
+            if(globalCardCounting !== []) { // if true then its not the first round
+                // check if the player has the highest card ingame and no other player could beat him and if so, save them into an array
+                let hasHighestCard = false;
+                let sortedGlobalCardCounting = [
+                    [ /* 2 */ ], 
+                    [ /* 3 */ ],
+                    [ /* 4 */ ],
+                    [ /* 5 */ ],
+                    [ /* 6 */ ],
+                    [ /* 7 */ ],
+                    [ /* 8 */ ],
+                    [ /* 9 */ ],
+                    [ /* 10 */ ],
+                    [ /* J */ ],
+                    [ /* D */ ],
+                    [ /* K */ ],
+                    [ /* A */ ],
+                ];
+                let stopLoop = false;
+
+                for(var j = 0; j < globalCardCounting.length; j++) { // push all global cards into sortedGlobalCardCounting[]
+                    let currentCardFilter = globalCardCounting[j].split("_"); // string[]
+
+                    // TODO: make it all more dynamically (maybe a object with all classified id's?)
+                    if(currentCardFilter(1) === 'J' 
+                    || currentCardFilter[1] === 'D'
+                    || currentCardFilter[1] === 'K'
+                    || currentCardFilter[1] === 'A') {
+                        let /* int */ value = 0;
+
+                        switch(currentCardFilter[1]) {
+                            case 'J':
+                                value = 9;
+                                break;
+                            case 'D':
+                                value = 10;
+                                break;
+                            case 'K':
+                                value = 11;
+                                break;
+                            case 'A':
+                            default:
+                                value = 12;
+                                break;
+                        }
+
+                        sortedGlobalCardCounting[value][sortedGlobalCardCounting[value].length + 1].push(globalCardCounting[j]);
+
+                        // debugger;
+                    }
+                    else {
+                        let parsedCardVal = parseInt(currentCardFilter[1]);
+                        sortedGlobalCardCounting[parsedCardVal - 2][sortedGlobalCardCounting[parsedCardVal - 2].length + 1].push(globalCardCounting[j]);
+                    }
+                }
+                for(var i = rank.length - 1; i >= 0; i--) {
+                    if(globalCardCounting[i].length === pattern.length /* predicted: 4 */) { // all cards are already played 
+                        // nothing happens ...
+                    }
+                    else if(globalCardCounting[i].length + this.all[i].length === pattern.length /* predicted: 4 */) { // player has the highest card on current round
+                        for(var k = 0; k < this.all[i].length; k++) {
+                            savedHighCards.push(this.all[i][k]);
+                        }
+
+                        stopLoop = true;
+                    }
+                    else {
+                        stopLoop = true;
+                    }
+
+                    if(stopLoop) {
+                        break; // no more continue
+                    }
+                }
+
+                if(savedHighCards !== []) { // check with winCompis[] 
+                    // make some predictions
+                    let pattern = false;
+                    let parsedSavedHighCards = [];
+                    let sortedSavedHighCards = [];
+
+                    for(var p = 0; p < savedHighCards; p++) {
+                        parsedSavedHighCards.push(savedHighCards[p].split("_"));
+                    }
+                    for(var q = 0; q < parsedSavedHighCards; q++) {
+                        if(q % 2 !== 0) sortedSavedHighCards.push(parsedSavedHighCards[q]);
+                    }
+
+                    for(var p = 0; p < winCompis.length; p++) {
+
+                    }
+ 
+                    if(pattern) { // if player has a winCompi pattern
+
+                    }
+                }
+                else { // play smallest card(s)
+                    for(var l = 0; l < this.all.length; l++) {
+                        if(this.all[l].length !== 0) {
+                            for(var m = 0; m < this.all[l].length; m++) {
+                                currentPushVar = this.all[l][m]; // push all cards
+                            }
+                          
+                            // remove pushed cards
+                            this.all[l] = [];
+                        }
+                    }
+                }
             }
             else { // take a random card the smallest as possible
                 for(var i = 0; i < this.all.length; i++) {
@@ -196,7 +307,7 @@ class Bot {
           
         }
       
-        return currentPushVar;
+        return currentPushVar; // type: array
     }
 
 }
