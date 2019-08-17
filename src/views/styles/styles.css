@@ -1,1 +1,96 @@
+body {
+	text-align: center;
+	background: url(img/board.png) fixed no-repeat;
+}
 
+header { 
+	min-width: auto;
+	max-width: 100%;
+	min-height: auto;
+	max-height: 100px;
+}
+
+h1, h2, h3 {
+	color: #188c0d;
+	background-color: #000;
+	border: 2px solid lightgreen;
+}
+
+section#my_cards img {
+    min-width: 26px;
+    max-width: 55px;
+    min-height: 33px;
+    max-height: 67px;
+    padding: 1px;
+    margin: 0px;
+    border: 2px outset bisque ;
+    text-align: justify;
+}
+
+/*
+img:hover, img:visited {
+	color: #66df5b;
+}
+*/
+
+footer {
+	color: #188c0d;
+	background-color: #000;
+	border: 2px solid lightgreen;
+	margin-top: 150px;
+	font-size: 3px;
+	padding: 5px;
+}
+
+span {
+	background-color: darkgreen;
+	color: lightgreen;
+	border: 1px 0 1px 1px dashed white;
+	border-radius: 5px;
+	font-size: 10px;
+	font-family: Tahoma, "Comic Sans MS";
+}
+
+/*
+entire container, keeps perspective
+.flip-container {
+	perspective: 1000px;
+}
+
+flip the pane when hovered
+.flip-container:hover, .flipper, .flip-container .hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+flip speed goes here
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+hide back of pane during swap
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+front pane, placed above back
+.front {
+	z-index: 2;
+	/* for firefox 31
+	transform: rotateY(0deg);
+}
+
+back, initially hidden pane
+.back {
+	transform: rotateY(180deg);
+}
+*/
