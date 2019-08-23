@@ -2,126 +2,198 @@ Test File
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>president game</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Card Game</title>
 </head>
 
 <body>
-<header>
-	<h2>board</h2>
-</header>
+	<header>
+		<h2>board</h2>
+	</header>
 
-<section id="my_cards">
-	<!-- my_cards -->
-	<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
-	<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
-	<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
-	<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
-	<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
-	<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
-	<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
-	<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
-	<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
-	<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
-	<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
-	<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
-	<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
-</section>
+	<div id="board" class="center">
 
-<section id="bot1_backface_cards">
-	<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
-	<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
-	<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
-	<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
-	<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
-	<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
-	<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
-	<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
-	<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
-	<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
-	<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
-	<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
-	<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
-</section>
+		<div id="my_cards" class="center">
+		<!-- my_cards -->
+		<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
+		<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
+		<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
+		<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
+		<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
+		<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
+		<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
+		<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
+		<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
+		<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
+		<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
+		<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
+		<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
+		</div>
 
-<section id="bot2_backface_cards">
-	<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
-	<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
-	<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
-	<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
-	<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
-	<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
-	<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
-	<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
-	<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
-	<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
-	<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
-	<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
-	<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
-</section>
+		<div id="bot1_backface_cards" class="center">
+		<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
+		<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
+		<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
+		<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
+		<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
+		<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
+		<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
+		<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
+		<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
+		<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
+	 	<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
+	 	<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
+		<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
+		</div>
 
-<section id="bot3_backface_cards">
-	<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
-	<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
-	<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
-	<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
-	<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
-	<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
-	<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
-	<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
-	<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
-	<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
-	<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
-	<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
-	<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
-</section>
+		<div id="bot2_backface_cards" class="center">
+		<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
+		<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
+		<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
+		<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
+		<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
+		<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
+		<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
+		<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
+		<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
+		<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
+		<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
+		<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
+		<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
+		</div>
 
-<footer>
-	<!-- TODO : HERE ==> ? console prints infos ?  --><span>command </span>: >> shuffle, draw, exchange ... 
-</footer>
+		<div id="bot3_backface_cards" class="center">
+		<img src="img/cartes-gif/Ac.gif" alt="Ace clubs"/>
+		<img src="img/cartes-gif/Ad.gif" alt="Ace diams"/>
+		<img src="img/cartes-gif/Ah.gif" alt="Ace hearts"/>
+		<img src="img/cartes-gif/As.gif" alt="Ace spades"/>
+		<img src="img/cartes-gif/Kc.gif" alt="King clubs"/>
+		<img src="img/cartes-gif/Kd.gif" alt="King diams"/>
+		<img src="img/cartes-gif/Kh.gif" alt="King hearts"/>
+		<img src="img/cartes-gif/Ks.gif" alt="King spades"/>
+		<img src="img/cartes-gif/Qc.gif" alt="Queen clubs"/>
+		<img src="img/cartes-gif/Qd.gif" alt="Queen diams"/>
+		<img src="img/cartes-gif/Qh.gif" alt="Queen hearts"/>
+		<img src="img/cartes-gif/Qs.gif" alt="Queen spades"/>
+		<img src="img/cartes-gif/Jc.gif" alt="Jack clubs"/>
+		</div>
 
+	</div>
+
+	<footer>
+		<!-- TODO : HERE ==> ? console prints infos ?  --><span>command </span>: >> shuffle, draw, exchange ...
+	</footer>
 </body>
-
 </html>
 
+style.css
 
-file: style.css
+<style>
+
 
 body {
-	text-align: center;
-	background: url(img/board.png) fixed no-repeat;
+    margin: auto;
+    background: url(img/board.png) fixed no-repeat;
 }
 
 header { 
-	min-width: auto;
-	max-width: 100%;
-	min-height: auto;
-	max-height: 100px;
+    min-width: auto;
+    max-width: 100%;
+    min-height: auto;
+    max-height: 100px;
 }
 
 h1, h2, h3 {
-	color: #188c0d;
-	background-color: #000;
-	border: 2px solid lightgreen;
+    color: #188c0d;
+    background-color: #000;
+    border: 2px solid lightgreen;
+    text-align: center;
 }
 
-section#my_cards img {
+div#board img {
+    margin: 15px;
+    padding: 0px;
+    max-width: 50px;
+    max-height: 67px;
+}
+
+div#board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.center:nth-child(1) {
+    order: 4;
+    align-self: flex-end;
+}
+
+.center:nth-child(2) {
+    order: 2;
+    align-self: flex-start;
+}
+
+.center:nth-child(3) {
+    order: 3;
+    align-self: flex-end;
+}
+
+.center:nth-child(4) {
+    order: 1;
+    align-self: flex-start;
+    
+}
+
+.center /*img*/ {
+    margin: auto;
+}
+
+#my_cards img {
+    padding: 0px;
     min-width: 26px;
     max-width: 55px;
     min-height: 33px;
     max-height: 67px;
-    padding: 1px;
-    margin: 0px;
-    border: 2px outset bisque ;
-    text-align: justify;
+    border: 4px outset bisque;
 }
 
-/*
+#bot1_backface_cards img {
+    min-width: 26px;
+    max-width: 55px;
+    min-height: 33px;
+    max-height: 67px;
+    padding: 0px;
+    margin: 0px;
+    border: 4px outset black ;
+}
+
+#bot2_backface_cards img {
+    min-width: 26px;
+    max-width: 55px;
+    min-height: 33px;
+    max-height: 67px;
+    padding: 0px;
+    margin: 0px;
+    border: 4px outset red ;
+}
+
+#bot3_backface_cards img {
+    min-width: 26px;
+    max-width: 55px;
+    min-height: 33px;
+    max-height: 67px;
+    padding: 0px;
+    margin: 0px;
+    border: 4px outset blue;
+}
+
 img:hover, img:visited {
 	color: #66df5b;
 }
-*/
 
 footer {
 	color: #188c0d;
@@ -133,22 +205,20 @@ footer {
 }
 
 span {
-	background-color: darkgreen;
-	color: lightgreen;
-	border: 1px 0 1px 1px dashed white;
-	border-radius: 5px;
-	font-size: 10px;
-	font-family: Tahoma, "Comic Sans MS";
+    background-color: rgb(0, 100, 0);
+    color: rgb(144, 238, 144);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 /*
 entire container, keeps perspective
 .flip-container {
 	perspective: 1000px;
 }
-
-flip the pane when hovered
-.flip-container:hover, .flipper, .flip-container .hover .flipper {
+	flip the pane when hovered
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
 	}
 
@@ -161,12 +231,14 @@ flip speed goes here
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
+
 	position: relative;
 }
 
 hide back of pane during swap
 .front, .back {
 	backface-visibility: hidden;
+
 	position: absolute;
 	top: 0;
 	left: 0;
