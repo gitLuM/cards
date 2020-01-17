@@ -204,7 +204,7 @@ class Bot {
                 for(var j = 0; j < globalCardCounting.length; j++) { // push all global cards into sortedGlobalCardCounting[]
                     let currentCardFilter = globalCardCounting[j].split("_"); // string[]
 
-                    // TODO: make it all more dynamically (maybe a object with all classified id's?)
+                    // TODO: make it all more dynamically (maybe an object with all classified id's?)
                     if(currentCardFilter(1) === 'J' 
                     || currentCardFilter[1] === 'D'
                     || currentCardFilter[1] === 'K'
